@@ -16,3 +16,19 @@ here we going to explore how can we setup laravels server with AWS cloudformatio
  aws cloudformation deploy --stack-name=laracast-servers --template-file $PWD/stack.json
 ```
 
+### Install PHP and nginx
+
+After connected from ssh
+
+```bash
+ sudo apt update
+ sudo apt install nginx php8.1-fpm
+```
+after that you can access through from  public IP (if port 80 is allowed)
+
+```bash
+ sudo apt install zip unzip php8.1-zip php8.1-curl php8.1-xml
+ curl -s https://getcomposer.org/installer | php
+ sudo mv composer.phar /usr/local/bin/composer
+ composer --version
+```
